@@ -10,11 +10,6 @@
 - https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk
 - https://github.com/apigee/openbank
 - https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk
-
+- https://github.com/apigee/api-platform-samples
 
 ### Apigee 4MV4D: Apigee Edge 4 Minute Videos for Developers
-
-
-No                  |    about     | url
-------------------- | ------------ | -------------------
-1| xxxxn |- xxxxxxxxxxxxxxxxxxxxxxx
