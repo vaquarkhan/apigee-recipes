@@ -32,7 +32,12 @@
 
 ----------------------------------------------
 
-# Apigee Certified API Engineer
+## Google Cloud - Apigee Certified API Engineer
+
+Apigee Certified Professionals design and develop robust, secure, scalable API solutions that drive business objectives. This accreditation from Google certifies that you demonstrate a superior level of proficiency using Apigee products, processes, and practices, and that you can use the technology to help transform businesses and meaningfully impact the customers they serve.
+
+
+
 
 | | | |
 | :---:         |     :---      |          :--- |
