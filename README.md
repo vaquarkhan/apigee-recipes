@@ -14,5 +14,44 @@
 - https://github.com/apigee/api-platform-samples
 - https://github.com/dzuluaga/apigee-tutorials/tree/master/apiproxies
 - https://github.com/apigee/DevJam/tree/master/Lab%20Guides/Lab%201%20-%20Design%20and%20Build%20a%20simple%20API%20Proxy
+- https://github.com/linuxacademy/content-apigee-api-engineer-exam
 
-### Apigee 4MV4D: Apigee Edge 4 Minute Videos for Developers
+----------------------------------------------
+
+# Apigee Certified API Engineer
+
+| | | |
+| :---:         |     :---      |          :--- |
+| **Official Link:** | https://cloud.google.com/certification/apigee-api-engineer | 
+| **Experience:** | Advanced-Professional | 
+| **Certification type:** | Specialization | 
+
+### Posts
+
+### Practice Exams / Tests
+
+### Books
+| Published | Title/Link | Author |
+| :---:         |     :---      |          :--- |
+| | [Official Ebooks](https://cloud.google.com/apigee/resources/#/type=Ebook) | |
+
+### Videos / Sessions
+| Event | Title/Link | Instructor |
+| :---:         |     :---      |          :--- |
+| Cloud Next '18 | [API Management Best Practices](https://www.youtube.com/watch?v=a_oPGpMfjMg) | |
+| | [Official Webcasts](https://docs.apigee.com/) | |
+
+### Online Trainings
+| Site | Title/Link | Instructor |
+| :---:         |     :---      |          :--- |
+| Coursera | [Specialization Developing APIs with Google Cloud's Apigee API Platform](https://www.coursera.org/specializations/apigee-api-gcp) | |
+| Coursera | [Official Training Program](https://cloud.google.com/training/apigee) | |
+
+### Qwiklabs Links
+|  Title/Link  |
+| :---:         |
+| [Using Apigee for API Management](https://google.qwiklabs.com/focuses/798?parent=catalog) |
+| [App Modernization with Apigee](https://google.qwiklabs.com/quests/57) |
+
+- https://cloud.google.com/certification/apigee-api-engineer
+- https://cloud.google.com/certification/guides/apigee-api-engineer
