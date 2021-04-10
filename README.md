@@ -1,6 +1,13 @@
+## Apigee-free-book
+
 ![Alt Text](https://nordicapis.com/wp-content/uploads/Apigee_TransparentPrimaryLogo-4.png )
 
-# Apigee-free-book
+
+Apigee is a platform for developing and managing APIs. By fronting services with a proxy layer, Apigee provides an abstraction or facade for your backend service APIs and provides security, rate limiting, quotas, analytics, and more.
+
+- https://cloud.google.com/apigee/docs/api-platform/get-started/what-apigee
+
+
 
 - https://docs.apigee.com
 - https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk
