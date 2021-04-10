@@ -34,7 +34,8 @@ API Security focuses on strategies and solutions to understand and mitigate the 
 #### Content-Based Attacks
 
 Content-based API attacks use malformed API requests to cause issues with APIs and backend services. Some attacks use text fields to compromise data in the backend, either retrieving data that the user should not be permitted to get, or destroying data in backend databases.
- 
+
+Json threat protection policy - https://docs.apigee.com/api-platform/reference/policies/json-threat-protection-policy
 
 #### DDOS attack 
 
