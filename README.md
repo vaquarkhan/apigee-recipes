@@ -35,13 +35,37 @@ API Security focuses on strategies and solutions to understand and mitigate the 
 
 Content-based API attacks use malformed API requests to cause issues with APIs and backend services. Some attacks use text fields to compromise data in the backend, either retrieving data that the user should not be permitted to get, or destroying data in backend databases.
 
-Json threat protection policy - https://docs.apigee.com/api-platform/reference/policies/json-threat-protection-policy
+#### Json threat protection policy - https://docs.apigee.com/api-platform/reference/policies/json-threat-protection-policy
 
-#### DDOS attack 
 
-#### SQL injection attack 
+          <JSONThreatProtection async="false" continueOnError="false" enabled="true" name="JTP-Protect">
+              <ArrayElementCount>3</ArrayElementCount>
+              <ContainerDepth>2</ContainerDepth>
+              <ObjectEntryCount>5</ObjectEntryCount>
+              <ObjectEntryNameLength>10</ObjectEntryNameLength>
+              <Source>request</Source>
+              <StringValueLength>20</StringValueLength>
+         </JSONThreatProtection>
+         
+ #### RegularExpressionThreatProtection policy - https://docs.apigee.com/api-platform/reference/policies/regular-expression-protection
+ 
+       <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="REP-SQLInjection">
+          <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+             <QueryParam name="query">
+                  <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+            </QueryParam>
+         <Source>request</Source>
+       </RegularExpressionProtection>
 
-#### CSRF injection attack 
+
+- https://docs.oracle.com/javase/tutorial/essential/regex/
+ 
+####  Transport Layer Security, or TLS,
+
+
+
+#### Internal Security
+
 
 
 - https://github.com/apigee/apijam/blob/master/Module-2b/Labs/Lab%203/README.md
