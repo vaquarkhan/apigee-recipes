@@ -24,7 +24,12 @@ Apigee is a platform for developing and managing APIs. By fronting services with
 - https://github.com/linuxacademy/content-apigee-api-engineer-exam
 
 
-## Apigee Security attack :
+## Apigee Security  :
+
+API Security focuses on strategies and solutions to understand and mitigate the unique vulnerabilities and security risks of Application Programming Interfaces (APIs).
+
+- https://owasp.org/www-project-api-security/
+- https://docs.apigee.com/api-platform/faq/owasp-protection
 
 #### content-type attack 
 
@@ -36,7 +41,8 @@ Apigee is a platform for developing and managing APIs. By fronting services with
 
 
 - https://github.com/apigee/apijam/blob/master/Module-2b/Labs/Lab%203/README.md
-
+- https://docs.apigee.com/api-platform/faq/owasp-protection
+- 
 ----------------------------------------------
 
 ## Google Cloud - Apigee Certified API Engineer
