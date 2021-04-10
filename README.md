@@ -42,8 +42,8 @@ Apigee Certified Professionals design and develop robust, secure, scalable API s
 | | | |
 | :---:         |     :---      |          :--- |
 | **Official Link:** | https://cloud.google.com/certification/apigee-api-engineer | 
-| **Experience:** | Advanced-Professional | 
-| **Certification type:** | Specialization | 
+| **Experience:  **  | Advanced-Professional | 
+| **Certification:** | Specialization | 
 
 ### Posts
 
