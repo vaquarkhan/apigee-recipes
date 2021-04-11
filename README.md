@@ -22,7 +22,9 @@ Apigee is a platform for developing and managing APIs. By fronting services with
 - https://github.com/dzuluaga/apigee-tutorials/tree/master/apiproxies
 - https://github.com/apigee/DevJam/tree/master/Lab%20Guides/Lab%201%20-%20Design%20and%20Build%20a%20simple%20API%20Proxy
 - https://github.com/linuxacademy/content-apigee-api-engineer-exam
-
+- https://github.com/apigee/api-platform-samples/tree/master/doc-samples/java-cookbook
+- https://github.com.cnpmjs.org/topics/apigee-edge
+- https://github.com/apigee/insights-samples
 
 ## Apigee Security  :
 
