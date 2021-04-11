@@ -112,6 +112,10 @@ Protecting data is an important part of your API security, so you should create 
       </BasicAuthentication>
 
 
+
+### Data Masks API : https://apidocs.apigee.com/docs/data-masks/1/routes/organizations/%7Borg_name%7D/apis/%7Bapi_name%7D/maskconfigs/post
+
+- https://apidocs.apigee.com/get-started
 - https://github.com/apigee/apijam/blob/master/Module-2b/Labs/Lab%203/README.md
 - https://docs.apigee.com/api-platform/faq/owasp-protection
 
