@@ -80,6 +80,38 @@ A user can also see credentials that are being used to communicate with backend 
 Protecting data is an important part of your API security, so you should create data masks for your organization and proxies, and ideally store the data masks in source control with your API proxies. Data masks are created by POSTing a request to the maskconfigs resource. The payload contains a list of variables and JSONPath or XPath expressions for API requests or responses. In this case, both the logonPassword field and the form parameter named creditcard of an incoming JSON request payload would be masked. When tracing, you will see the masked value replaced with asterisks. A downloaded trace file will also have the data masked.
 
 
+### key-value-map-operations-policy   :  https://docs.apigee.com/api-platform/reference/policies/key-value-map-operations-policy
+
+
+     <KeyValueMapOperations async="false" continueOnError="false" enabled="true"  name="KVM-GetCredentials" mapIdentifier="ProductsKVM">
+           <ExclusiveCache>false</ExclusiveCache>
+           <ExpiryTimeInSecs>60</ExpiryTimeInSecs>
+              <Get assignTo="private.backendId">
+                <Key>
+                   <Parameter>backendId</Parameter>
+                </Key>
+             </Get>
+             <Get assignTo="private.backendSecret">
+            <Key>
+              <Parameter>backendSecret</Parameter>
+            </Key>
+        </Get>
+       <Scope>environment</Scope>
+     </KeyValueMapOperations>
+
+
+### BasicAuthentication policy : https://docs.apigee.com/api-platform/reference/policies/basic-authentication-policy
+ 
+ 
+      <BasicAuthentication async="false" continueOnError="false" enabled="true" name="BA-AddAuthHeader">
+          <Operation>Encode</Operation>
+          <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+          <User ref="private.backendId"/>
+          <Password ref="private.backendSecret"/>
+          <AssignTo createNew="false">request.header.Authorization</AssignTo>
+      </BasicAuthentication>
+
+
 - https://github.com/apigee/apijam/blob/master/Module-2b/Labs/Lab%203/README.md
 - https://docs.apigee.com/api-platform/faq/owasp-protection
 
