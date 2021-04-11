@@ -62,10 +62,22 @@ Content-based API attacks use malformed API requests to cause issues with APIs a
  
 ####  Transport Layer Security, or TLS,
 
+One way vs two way TLS :
+implementing one-way SSL authentication, the server application shares its public certificate with the client. In two-way SSL authentication, the client application verifies the identity of the server application, and then the server application verifies the identity of the client application.
+
 
 
 #### Internal Security
 
+Role-based access control controls the level of access for users of Apigee. Data masking and private variables can be used to prevent sensitive data from being visible when live traffic is being traced, and encrypted key value maps can be used to store and use configuration data like credentials, without allowing users of the Apigee platform to see the values. Role-based access control, or RBAC, provides controlled levels of access to users of the Apigee management platform. Tasks that can be performed in the management UI are the equivalent of one or more management API calls. 
+
+Permissions are based on management API calls to resources. If the user can make an API call, she can perform the same action within the UI. Similarly, a user who does not have permission to make a management API call cannot perform the same action within the UI. Roles are used to group permissions. Roles can be assigned to users of the platform, and the user can have more than one role. When more than one role exists for a user, the user is able to perform any operation that either role is allowed to perform. Apigee comes with several predefined roles. Here are a few examples: an organization administrator, or org admin, is a superuser. A person with the org admin role has full control of the organization, and also can add users and custom roles to the organization. A read-only org admin has full read access to the organization. An operations administrator manages API deployments and troubleshoots proxies, and can deploy, test and trace APIs, but not create or edit them. A business user manages business entities like API products, developers, developer apps, and custom reports, but not API proxies or deployments.
+
+A user is an API developer with the ability to edit API proxies. You may sometimes find that the built-in roles might not work for your use case. Apigee also provides the ability to create custom roles. You can create custom roles to customize permissions for your use cases. Use of the Apigee trace tool is vital for troubleshooting issues with your API. However, the user tracing live API traffic can by default see all of the fields that are being accessed during the API calls. This data can include sensitive user data, including names, passwords, or credit card numbers. 
+
+A user can also see credentials that are being used to communicate with backend services. When you download a trace log, those values will also be in the trace file. Data masking can block configured data from being visible in live trace or trace files. You specify certain patterns of field or variable names, and matching data will be masked using a series of asterisks. Data masking is a feature that cannot be controlled using the Apigee management UI. Data masks can only be set up using the management API. Data masks can be configured at the organization level, and these masks will be active for all APIs in the organization. They can also be configured for a specific API proxy, adding additional fields to masks that are specific to the API. Because data masks are not visible in the UI, API teams sometimes forget about them. 
+
+Protecting data is an important part of your API security, so you should create data masks for your organization and proxies, and ideally store the data masks in source control with your API proxies. Data masks are created by POSTing a request to the maskconfigs resource. The payload contains a list of variables and JSONPath or XPath expressions for API requests or responses. In this case, both the logonPassword field and the form parameter named creditcard of an incoming JSON request payload would be masked. When tracing, you will see the masked value replaced with asterisks. A downloaded trace file will also have the data masked.
 
 
 - https://github.com/apigee/apijam/blob/master/Module-2b/Labs/Lab%203/README.md
